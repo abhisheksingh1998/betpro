@@ -261,7 +261,7 @@ img {
 .hero-media {
   position: absolute;
   inset: 0;
-  z-index: -2;
+  z-index: 0;
 }
 
 .hero-photo {
@@ -269,17 +269,9 @@ img {
   object-position: center center;
 }
 
-.hero-media::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background:
-    linear-gradient(90deg, rgba(4, 5, 4, 0.94) 0%, rgba(4, 5, 4, 0.78) 45%, rgba(4, 5, 4, 0.55) 100%),
-    linear-gradient(180deg, rgba(4, 5, 4, 0.4) 0%, rgba(4, 5, 4, 0.85) 100%);
-}
-
 .hero-inner {
+  position: relative;
+  z-index: 1;
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
   padding: 7rem 0 3.5rem;
