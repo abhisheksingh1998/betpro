@@ -274,6 +274,14 @@ img {
   border-bottom: 3px solid var(--bp-mint);
 }
 
+@media (min-width: 769px) {
+  .hero {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+    max-height: calc(100svh - var(--site-header-height));
+  }
+}
+
 .hero-media {
   position: absolute;
   inset: 0;
@@ -315,11 +323,12 @@ img {
 .hero-banner-cta {
   position: absolute;
   z-index: 2;
-  right: clamp(1.5rem, 8vw, 7.5rem);
+  left: 74.5%;
   top: 58%;
   display: flex;
   justify-content: center;
-  width: min(22rem, 34vw);
+  width: auto;
+  transform: translateX(-50%);
 }
 
 .hero-banner-cta .btn {
@@ -331,11 +340,10 @@ img {
 
 @media (max-width: 768px) {
   .hero-banner-cta {
-    right: 50%;
     left: 50%;
+    right: auto;
     top: auto;
     bottom: 6%;
-    width: auto;
     transform: translateX(-50%);
   }
 
