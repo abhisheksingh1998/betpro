@@ -1,4 +1,4 @@
-export const WHATSAPP_URL = "https://wa.me/919999999999";
+export const WHATSAPP_URL = "https://wa.link/bpexch";
 
 export const SITE_NAME = "Betpro";
 export const SITE_TAGLINE = "Powered by Rollwin";
