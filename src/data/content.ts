@@ -18,7 +18,7 @@ export const matchesSection = {
     {
       name: "Cricket",
       accent: "cricket",
-      image: "/images/sport-cricket.jpg",
+      image: "/images/sport-cricket.png",
       matches: [
         {
           teams: "Mumbai Titans vs Delhi Chargers",
@@ -43,7 +43,7 @@ export const matchesSection = {
     {
       name: "Football",
       accent: "football",
-      image: "/images/sport-football.jpg",
+      image: "/images/sport-football.png",
       matches: [
         {
           teams: "North United vs River FC",
@@ -62,7 +62,7 @@ export const matchesSection = {
     {
       name: "Tennis",
       accent: "tennis",
-      image: "/images/sport-tennis.jpg",
+      image: "/images/sport-tennis.png",
       matches: [
         {
           teams: "A. Verma vs L. Costa",

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { matchesSection } from "@/data/content";
+import { WHATSAPP_URL } from "@/data/site";
 
 export function LiveMatches() {
   return (
@@ -12,7 +13,14 @@ export function LiveMatches() {
         </div>
         <div className="matches-layout">
           {matchesSection.categories.map((cat) => (
-            <div key={cat.name} className="match-board">
+            <a
+              key={cat.name}
+              href={WHATSAPP_URL}
+              className="match-board"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${cat.name} markets on WhatsApp`}
+            >
               <div className="match-board-media">
                 <Image
                   src={cat.image}
@@ -40,7 +48,7 @@ export function LiveMatches() {
                   </div>
                 ))}
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

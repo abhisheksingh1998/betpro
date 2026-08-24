@@ -593,11 +593,20 @@ img {
 }
 
 .match-board {
+  display: block;
   overflow: hidden;
   border: 1px solid var(--bp-line);
   border-radius: 8px;
   background: var(--bp-ink-panel);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+a.match-board:hover {
+  border-color: rgba(141, 227, 161, 0.45);
+  transform: translateY(-2px);
 }
 
 .match-board-media {
