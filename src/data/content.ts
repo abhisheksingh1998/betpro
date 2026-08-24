@@ -21,20 +21,20 @@ export const matchesSection = {
       image: "/images/sport-cricket.png",
       matches: [
         {
-          teams: "Mumbai Titans vs Delhi Chargers",
-          league: "Premier T20 Cup",
+          teams: "Islamabad United vs Lahore Qalandars",
+          league: "Pakistan Super League",
           time: "Today · 7:30 pm",
           status: "LIVE" as const,
         },
         {
-          teams: "Chennai Kings vs Gujarat Riders",
-          league: "Premier T20 Cup",
+          teams: "Karachi Kings vs Peshawar Zalmi",
+          league: "Pakistan Super League",
           time: "Today · 3:30 pm",
           status: "UPCOMING" as const,
         },
         {
-          teams: "Sydney Strikers vs Melbourne Heat",
-          league: "Southern Bash League",
+          teams: "Multan Sultans vs Quetta Gladiators",
+          league: "Pakistan Super League",
           time: "Tomorrow · 1:45 pm",
           status: "UPCOMING" as const,
         },
