@@ -2,7 +2,7 @@ export const WHATSAPP_URL = "https://wa.me/919999999999";
 
 export const SITE_NAME = "Betpro";
 export const SITE_TAGLINE = "Powered by Rollwin";
-export const SITE_URL = "https://betpro.vercel.app";
+export const SITE_URL = "https://betpro-eight.vercel.app";
 
 export const navLinksHome = [
   { href: "/#live-matches", label: "Live Odds" },
