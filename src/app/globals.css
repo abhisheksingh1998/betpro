@@ -274,14 +274,6 @@ img {
   border-bottom: 3px solid var(--bp-mint);
 }
 
-@media (min-width: 769px) {
-  .hero {
-    min-height: 0;
-    aspect-ratio: 16 / 9;
-    max-height: calc(100svh - var(--site-header-height));
-  }
-}
-
 .hero-media {
   position: absolute;
   inset: 0;
@@ -333,6 +325,7 @@ img {
 
 .hero-banner-cta .btn {
   min-width: 11.5rem;
+  margin-top: 70px;
   padding: 0.85rem 1.6rem;
   font-size: 0.95rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
