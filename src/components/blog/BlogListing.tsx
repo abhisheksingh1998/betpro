@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { articles } from "@/data/articles";
 
@@ -18,6 +19,14 @@ export function BlogListing() {
         <div className="container blog-grid">
           {articles.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-card">
+              <div className="blog-card-media">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  sizes="(max-width: 800px) 100vw, 33vw"
+                />
+              </div>
               <div className="meta">
                 <span>{post.category}</span>
                 <span>{post.date}</span>

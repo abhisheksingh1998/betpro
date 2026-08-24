@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Article } from "@/data/articles";
 import { getRelatedArticles } from "@/data/articles";
@@ -7,7 +8,7 @@ export function ArticleDetail({ article }: { article: Article }) {
 
   return (
     <>
-      <div className="page-hero">
+      <div className="page-hero page-hero-article">
         <div className="container">
           <span className="eyebrow">
             {article.category} · {article.readTime}
@@ -21,6 +22,16 @@ export function ArticleDetail({ article }: { article: Article }) {
 
       <div className="container article-layout">
         <article className="article-body">
+          <div className="article-featured">
+            <Image
+              src={article.image}
+              alt={article.title}
+              fill
+              sizes="(max-width: 960px) 100vw, 70vw"
+              priority
+            />
+          </div>
+
           {article.sections.map((section) => (
             <section key={section.id} id={section.id}>
               <h2>{section.heading}</h2>
@@ -35,6 +46,14 @@ export function ArticleDetail({ article }: { article: Article }) {
             <div className="blog-grid" style={{ marginTop: "1.25rem" }}>
               {related.map((post) => (
                 <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-card">
+                  <div className="blog-card-media">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      sizes="(max-width: 800px) 100vw, 33vw"
+                    />
+                  </div>
                   <div className="meta">
                     <span>{post.category}</span>
                     <span>{post.readTime}</span>

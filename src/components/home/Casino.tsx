@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { casinoSection } from "@/data/content";
 import { WHATSAPP_URL } from "@/data/site";
 
@@ -18,8 +19,17 @@ export function Casino() {
               className="game-tile"
               data-tone={game.tone}
             >
-              <span>{game.tag}</span>
-              <strong>{game.name}</strong>
+              <Image
+                src={game.image}
+                alt={game.name}
+                fill
+                sizes="(max-width: 720px) 50vw, 25vw"
+                className="game-tile-img"
+              />
+              <div className="game-tile-copy">
+                <span>{game.tag}</span>
+                <strong>{game.name}</strong>
+              </div>
             </a>
           ))}
         </div>

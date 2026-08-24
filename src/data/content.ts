@@ -4,6 +4,7 @@ export const hero = {
     "Betpro gives you a clean path to live sports markets, instant IDs, and fast settlements — built for players who want clarity over clutter.",
   primaryCta: "Get Betpro ID",
   secondaryCta: "Talk on WhatsApp",
+  image: "/images/hero.jpg",
 };
 
 export const matchesSection = {
@@ -14,6 +15,7 @@ export const matchesSection = {
     {
       name: "Cricket",
       accent: "cricket",
+      image: "/images/sport-cricket.jpg",
       matches: [
         {
           teams: "Mumbai Titans vs Delhi Chargers",
@@ -38,6 +40,7 @@ export const matchesSection = {
     {
       name: "Football",
       accent: "football",
+      image: "/images/sport-football.jpg",
       matches: [
         {
           teams: "North United vs River FC",
@@ -56,6 +59,7 @@ export const matchesSection = {
     {
       name: "Tennis",
       accent: "tennis",
+      image: "/images/sport-tennis.jpg",
       matches: [
         {
           teams: "A. Verma vs L. Costa",
@@ -79,14 +83,54 @@ export const casinoSection = {
   subtitle:
     "Classic Indian favourites and global tables — same wallet, same Betpro ID.",
   games: [
-    { name: "Teen Patti Live", tag: "HOT", tone: "mint" },
-    { name: "Dragon Tiger", tag: "2x", tone: "mint" },
-    { name: "Roulette Pro", tag: "LIVE", tone: "white" },
-    { name: "Andar Bahar", tag: "FAST", tone: "mint" },
-    { name: "Poker Rooms", tag: "SKILL", tone: "white" },
-    { name: "Lucky Spin", tag: "NEW", tone: "mint" },
-    { name: "7 Up 7 Down", tag: "CLASSIC", tone: "white" },
-    { name: "Crash Arena", tag: "INSTANT", tone: "mint" },
+    {
+      name: "Teen Patti Live",
+      tag: "HOT",
+      tone: "mint",
+      image: "/images/game-teenpatti.jpg",
+    },
+    {
+      name: "Dragon Tiger",
+      tag: "2x",
+      tone: "mint",
+      image: "/images/game-dragon-tiger.jpg",
+    },
+    {
+      name: "Roulette Pro",
+      tag: "LIVE",
+      tone: "white",
+      image: "/images/game-roulette.jpg",
+    },
+    {
+      name: "Andar Bahar",
+      tag: "FAST",
+      tone: "mint",
+      image: "/images/game-andar-bahar.jpg",
+    },
+    {
+      name: "Poker Rooms",
+      tag: "SKILL",
+      tone: "white",
+      image: "/images/game-poker.jpg",
+    },
+    {
+      name: "Lucky Spin",
+      tag: "NEW",
+      tone: "mint",
+      image: "/images/game-lucky-spin.jpg",
+    },
+    {
+      name: "7 Up 7 Down",
+      tag: "CLASSIC",
+      tone: "white",
+      image: "/images/game-7up7down.jpg",
+    },
+    {
+      name: "Crash Arena",
+      tag: "INSTANT",
+      tone: "mint",
+      image: "/images/game-crash.jpg",
+    },
   ],
 };
 
@@ -98,6 +142,8 @@ export const aboutSection = {
     "Powered by Rollwin infrastructure, Betpro keeps deposits, withdrawals, and account access on a single secure lane so you can focus on the next over, set, or corner kick.",
   ],
   ctaLabel: "Request your demo ID",
+  image: "/images/about.jpg",
+  panelText: "One ID. Live sports. Tables that stay open when the night gets long.",
 };
 
 export const whyUsSection = {
@@ -108,21 +154,25 @@ export const whyUsSection = {
       title: "Instant ID on chat",
       description:
         "Message the desk, verify once, and receive login details without long forms or waiting rooms.",
+      image: "/images/feature-id.jpg",
     },
     {
       title: "Live + pre-match depth",
       description:
         "Move between exchange-style cricket lines and fixed markets for football and tennis in one account.",
+      image: "/images/feature-live.jpg",
     },
     {
       title: "Settlement you can trust",
       description:
         "Clear deposit rails and withdrawal queues with status updates — so wins do not sit in limbo.",
+      image: "/images/feature-settle.jpg",
     },
     {
       title: "Desk that stays awake",
       description:
         "Hindi and English support around the clock for ID resets, payment checks, and market questions.",
+      image: "/images/feature-support.jpg",
     },
   ],
 };
@@ -132,6 +182,7 @@ export const betBigSection = {
   description:
     "From IPL nights to Champions League midweeks, Betpro keeps liquidity and limits ready for players who scale with confidence.",
   ctaLabel: "Open Betpro on WhatsApp",
+  image: "/images/bet-big.jpg",
 };
 
 export const faqSection = {

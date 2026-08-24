@@ -5,7 +5,16 @@ import { WHATSAPP_URL } from "@/data/site";
 export function Hero() {
   return (
     <section className="hero" id="home">
-      <div className="hero-media" aria-hidden="true" />
+      <div className="hero-media" aria-hidden="true">
+        <Image
+          src={hero.image}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="hero-photo"
+        />
+      </div>
       <div className="hero-orb" aria-hidden="true" />
       <div className="hero-inner">
         <div className="hero-brand">
