@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import { Syne, Sora } from "next/font/google";
+import { Rajdhani, Inter } from "next/font/google";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { SITE_NAME, SITE_URL } from "@/data/site";
 import "./globals.css";
 
-const syne = Syne({
+const rajdhani = Rajdhani({
   subsets: ["latin"],
-  variable: "--font-syne",
-  weight: ["600", "700", "800"],
+  variable: "--font-rajdhani",
+  weight: ["600", "700"],
 });
 
-const sora = Sora({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-sora",
-  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -44,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${syne.variable} ${sora.variable}`}>
+    <html lang="en" className={`${rajdhani.variable} ${inter.variable}`}>
       <body>
         {children}
         <WhatsAppFloat />

@@ -1,9 +1,12 @@
 export const hero = {
-  headline: "Odds that move with the game.",
+  eyebrow: "India's Trusted Online Betting Exchange",
+  brandName: "Betpro",
+  tagline: "Powered by Rollwin",
+  headline: "Live Sports Betting, Cricket ID & Casino — All in One Place",
   support:
-    "Betpro gives you a clean path to live sports markets, instant IDs, and fast settlements — built for players who want clarity over clutter.",
+    "Get your Betpro ID in minutes. Bet on cricket, football, tennis, and live casino games with instant UPI deposits, fast withdrawals, and 24/7 WhatsApp support.",
   primaryCta: "Get Betpro ID",
-  secondaryCta: "Talk on WhatsApp",
+  secondaryCta: "Login Now",
   image: "/images/hero.jpg",
 };
 

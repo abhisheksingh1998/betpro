@@ -15,16 +15,11 @@ export function Hero() {
           className="hero-photo"
         />
       </div>
-      <div className="hero-orb" aria-hidden="true" />
       <div className="hero-inner">
         <div className="hero-brand">
-          <Image
-            src="/logo-betpro.png"
-            alt="Betpro — Powered by Rollwin"
-            width={280}
-            height={74}
-            priority
-          />
+          <span className="hero-eyebrow">{hero.eyebrow}</span>
+          <p className="hero-brand-name">{hero.brandName}</p>
+          <p className="hero-brand-tag">{hero.tagline}</p>
         </div>
         <h1>{hero.headline}</h1>
         <p className="hero-support">{hero.support}</p>
@@ -36,8 +31,21 @@ export function Hero() {
             {hero.secondaryCta}
           </a>
         </div>
+        <div className="hero-stats">
+          <div className="hero-stat">
+            <strong>500+</strong>
+            <span>Live Markets Daily</span>
+          </div>
+          <div className="hero-stat">
+            <strong>2 Min</strong>
+            <span>Instant ID Setup</span>
+          </div>
+          <div className="hero-stat">
+            <strong>24/7</strong>
+            <span>WhatsApp Support</span>
+          </div>
+        </div>
       </div>
-      <div className="hero-rail" aria-hidden="true" />
     </section>
   );
 }
