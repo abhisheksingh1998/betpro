@@ -29,8 +29,8 @@ export function Header({ variant = "home", active = null }: HeaderProps) {
           <Image
             src="/logo-betpro.png"
             alt="Betpro — Powered by Rollwin"
-            width={260}
-            height={68}
+            width={360}
+            height={96}
             priority
           />
         </Link>

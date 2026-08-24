@@ -12,7 +12,7 @@
   --bp-muted: #8fa898;
   --bp-white: #ffffff;
   --bp-danger: #ff4d4d;
-  --site-header-height: calc(5.25rem + 3px);
+  --site-header-height: calc(6.5rem + 3px);
   --modal-viewport-gap: 0.85rem;
   --font-display: var(--font-rajdhani), "Segoe UI", sans-serif;
   --font-body: var(--font-inter), "Segoe UI", sans-serif;
@@ -167,13 +167,20 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 5.25rem;
+  min-height: 6.5rem;
   gap: 1rem;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 .logo-link img {
-  height: clamp(52px, 5.5vw, 64px);
+  height: clamp(76px, 8.5vw, 96px);
   width: auto;
+  max-width: none;
 }
 
 .nav-desktop {
@@ -478,7 +485,7 @@ img {
 
 @media (max-width: 520px) {
   :root {
-    --site-header-height: calc(5.25rem + 3px);
+    --site-header-height: calc(6.5rem + 3px);
     --modal-viewport-gap: 0.75rem;
   }
 
