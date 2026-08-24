@@ -1,11 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { hero } from "@/data/content";
 import { WHATSAPP_URL } from "@/data/site";
 
 export function HeroWelcomeModal() {
   const [open, setOpen] = useState(true);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (!open) {
@@ -26,9 +32,9 @@ export function HeroWelcomeModal() {
     };
   }, [open]);
 
-  if (!open) return null;
+  if (!open || !mounted) return null;
 
-  return (
+  return createPortal(
     <div
       className="hero-modal-overlay"
       role="presentation"
@@ -83,6 +89,7 @@ export function HeroWelcomeModal() {
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
