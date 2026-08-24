@@ -285,6 +285,20 @@ img {
   object-position: center center;
 }
 
+.hero-photo-mobile {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .hero-photo-desktop {
+    display: none !important;
+  }
+
+  .hero-photo-mobile {
+    display: block !important;
+  }
+}
+
 .hero-media::after {
   content: "";
   position: absolute;
