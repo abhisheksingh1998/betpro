@@ -145,7 +145,7 @@ export const aboutSection = {
     "Powered by Rollwin infrastructure, Betpro keeps deposits, withdrawals, and account access on a single secure lane so you can focus on the next over, set, or corner kick.",
   ],
   ctaLabel: "Request your demo ID",
-  image: "/images/about.jpg",
+  image: "/images/about.png",
   panelText: "One ID. Live sports. Tables that stay open when the night gets long.",
 };
 
