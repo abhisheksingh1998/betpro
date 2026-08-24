@@ -854,17 +854,19 @@ a.match-board:hover {
 
 @media (min-width: 640px) {
   .why-card {
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: minmax(220px, 42%) 1fr;
   }
 }
 
 .why-card-media {
   position: relative;
-  min-height: 150px;
+  min-height: 180px;
+  background: #0a0c0a;
 }
 
 .why-card-media img {
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
 }
 
 .why-card-body {
