@@ -178,8 +178,8 @@ img {
 }
 
 .logo-link img {
-  height: clamp(76px, 8.5vw, 96px);
-  width: auto;
+  width: 155px;
+  height: auto;
   max-width: none;
 }
 
@@ -1020,8 +1020,8 @@ img {
 }
 
 .site-footer img {
-  height: 52px;
-  width: auto;
+  width: 155px;
+  height: auto;
   margin-bottom: 1rem;
 }
 
