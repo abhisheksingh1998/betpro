@@ -266,7 +266,8 @@ img {
 /* Hero */
 .hero {
   position: relative;
-  min-height: 88svh;
+  margin-top: var(--site-header-height);
+  min-height: calc(100svh - var(--site-header-height));
   display: grid;
   align-items: center;
   overflow: hidden;

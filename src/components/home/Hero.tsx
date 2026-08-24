@@ -13,6 +13,7 @@ export function Hero() {
           priority
           sizes="100vw"
           className="hero-photo hero-photo-desktop"
+          style={{ objectFit: "cover", objectPosition: "center top" }}
         />
         <Image
           src="/images/hero-mobile.png"
@@ -21,6 +22,7 @@ export function Hero() {
           priority
           sizes="100vw"
           className="hero-photo hero-photo-mobile"
+          style={{ objectFit: "cover", objectPosition: "center top" }}
         />
       </div>
 
