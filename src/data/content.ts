@@ -157,25 +157,25 @@ export const whyUsSection = {
       title: "Instant ID on chat",
       description:
         "Message the desk, verify once, and receive login details without long forms or waiting rooms.",
-      image: "/images/feature-id.jpg",
+      image: "/images/feature-id.png",
     },
     {
       title: "Live + pre-match depth",
       description:
         "Move between exchange-style cricket lines and fixed markets for football and tennis in one account.",
-      image: "/images/feature-live.jpg",
+      image: "/images/feature-live.png",
     },
     {
       title: "Settlement you can trust",
       description:
         "Clear deposit rails and withdrawal queues with status updates — so wins do not sit in limbo.",
-      image: "/images/feature-settle.jpg",
+      image: "/images/feature-settle.png",
     },
     {
       title: "Desk that stays awake",
       description:
         "Hindi and English support around the clock for ID resets, payment checks, and market questions.",
-      image: "/images/feature-support.jpg",
+      image: "/images/feature-support.png",
     },
   ],
 };
