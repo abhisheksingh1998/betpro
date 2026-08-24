@@ -1263,11 +1263,36 @@ a.match-board:hover {
   border-top: 1px solid var(--bp-line);
 }
 
+/* Scroll reveal */
+html.has-scroll-anim .reveal {
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+html.has-scroll-anim .reveal:not(.is-revealed) {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+html.has-scroll-anim .reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     animation: none !important;
     transition: none !important;
+  }
+
+  html.has-scroll-anim .reveal,
+  html.has-scroll-anim .reveal:not(.is-revealed) {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }

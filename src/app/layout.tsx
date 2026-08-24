@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Rajdhani, Inter } from "next/font/google";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { ScrollAnimations } from "@/components/ScrollAnimations";
 import { SITE_NAME, SITE_URL } from "@/data/site";
 import "./globals.css";
 
@@ -48,6 +49,7 @@ export default function RootLayout({
       <body>
         {children}
         <WhatsAppFloat />
+        <ScrollAnimations />
       </body>
     </html>
   );
