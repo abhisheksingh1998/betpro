@@ -12,7 +12,7 @@
   --bp-muted: #8fa898;
   --bp-white: #ffffff;
   --bp-danger: #ff4d4d;
-  --site-header-height: calc(3.25rem + 3px);
+  --site-header-height: calc(3px + 10px + 2.75rem + 10px + 1px);
   --modal-viewport-gap: 0.85rem;
   --font-display: var(--font-rajdhani), "Segoe UI", sans-serif;
   --font-body: var(--font-inter), "Segoe UI", sans-serif;
@@ -167,8 +167,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 3.25rem;
-  padding-block: 0.2rem;
+  min-height: 0;
+  padding-block: 10px;
   gap: 1rem;
 }
 
@@ -492,7 +492,7 @@ img {
 
 @media (max-width: 520px) {
   :root {
-    --site-header-height: calc(3.25rem + 3px);
+    --site-header-height: calc(3px + 10px + 2.75rem + 10px + 1px);
     --modal-viewport-gap: 0.75rem;
   }
 
