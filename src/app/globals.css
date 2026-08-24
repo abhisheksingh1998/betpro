@@ -974,13 +974,16 @@ a.match-board:hover {
 
 .blog-card-media {
   position: relative;
-  height: 170px;
+  aspect-ratio: 16 / 9;
+  height: auto;
   overflow: hidden;
   margin-bottom: 0;
+  background: #0a0c0a;
 }
 
 .blog-card-media img {
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
 }
 
 .blog-card:hover {
@@ -1197,15 +1200,19 @@ a.match-board:hover {
 
 .article-featured {
   position: relative;
-  height: clamp(220px, 40vw, 360px);
+  aspect-ratio: 16 / 9;
+  height: auto;
+  max-height: none;
   overflow: hidden;
   margin-bottom: 1.75rem;
   border: 1px solid var(--bp-line);
   border-radius: 8px;
+  background: #0a0c0a;
 }
 
 .article-featured img {
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
 }
 
 .article-body h2 {

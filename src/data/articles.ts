@@ -18,7 +18,7 @@ export const articles: Article[] = [
     excerpt:
       "A calm framework for spotting when in-play cricket prices overreact — and when to stay out.",
     readTime: "6 min",
-    image: "/images/blog-cricket.jpg",
+    image: "/images/blog-cricket.png",
     sections: [
       {
         id: "start",
@@ -53,7 +53,7 @@ export const articles: Article[] = [
     excerpt:
       "Five-minute prep that keeps midweek football bets disciplined when you cannot watch every lineup show.",
     readTime: "5 min",
-    image: "/images/blog-football.jpg",
+    image: "/images/blog-football.png",
     sections: [
       {
         id: "timebox",
@@ -80,7 +80,7 @@ export const articles: Article[] = [
     excerpt:
       "Practical deposit and session rules Indian players can keep — without pretending willpower is infinite.",
     readTime: "4 min",
-    image: "/images/blog-mindset.jpg",
+    image: "/images/blog-mindset.png",
     sections: [
       {
         id: "rules",
