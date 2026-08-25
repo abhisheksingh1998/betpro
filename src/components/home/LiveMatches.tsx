@@ -28,6 +28,7 @@ export function LiveMatches() {
                   fill
                   sizes="(max-width: 900px) 100vw, 33vw"
                 />
+                <span className="match-board-label">{cat.name}</span>
               </div>
             </a>
           ))}
