@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Rajdhani, Inter } from "next/font/google";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { ScrollAnimations } from "@/components/ScrollAnimations";
 import { SITE_NAME, SITE_URL } from "@/data/site";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = "G-9ECB4X2BPT";
 
 const rajdhani = Rajdhani({
   subsets: ["latin"],
@@ -53,6 +56,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${rajdhani.variable} ${inter.variable}`}>
       <body>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         {children}
         <WhatsAppFloat />
         <ScrollAnimations />
