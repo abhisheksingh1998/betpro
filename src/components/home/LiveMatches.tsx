@@ -29,25 +29,6 @@ export function LiveMatches() {
                   sizes="(max-width: 900px) 100vw, 33vw"
                 />
               </div>
-              <div className="match-board-body">
-                <h3>{cat.name}</h3>
-                {cat.matches.map((match) => (
-                  <div key={match.teams} className="match-row">
-                    <div className="match-teams">{match.teams}</div>
-                    <div className="match-meta">
-                      <span
-                        className={`badge ${
-                          match.status === "LIVE" ? "badge-live" : "badge-upcoming"
-                        }`}
-                      >
-                        {match.status}
-                      </span>
-                      <span>{match.league}</span>
-                      <span>{match.time}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
             </a>
           ))}
         </div>

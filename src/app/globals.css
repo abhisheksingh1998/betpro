@@ -614,48 +614,15 @@ a.match-board:hover {
 
 .match-board-media {
   position: relative;
-  height: 140px;
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  height: auto;
+  min-height: 0;
 }
 
 .match-board-media img {
   object-fit: cover;
-}
-
-.match-board-media::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 30%, rgba(5, 6, 5, 0.85));
-}
-
-.match-board-body {
-  padding: 1.1rem 1.15rem 1.35rem;
-}
-
-.match-board h3 {
-  margin: 0 0 0.85rem;
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--bp-mint);
-}
-
-.match-row {
-  display: grid;
-  gap: 0.35rem;
-  padding: 0.95rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.match-row:first-of-type {
-  border-top: none;
-  padding-top: 0;
-}
-
-.match-teams {
-  font-weight: 600;
-  font-size: 0.98rem;
+  object-position: center center;
 }
 
 .match-meta {
