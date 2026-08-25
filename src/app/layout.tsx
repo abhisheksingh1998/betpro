@@ -6,8 +6,6 @@ import { ScrollAnimations } from "@/components/ScrollAnimations";
 import { SITE_NAME, SITE_URL } from "@/data/site";
 import "./globals.css";
 
-const GA_MEASUREMENT_ID = "G-9ECB4X2BPT";
-
 const rajdhani = Rajdhani({
   subsets: ["latin"],
   variable: "--font-rajdhani",
@@ -55,19 +53,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${rajdhani.variable} ${inter.variable}`}>
-      <body>
+      <head>
+        {/* Google tag (gtag.js) */}
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
+          id="google-analytics-script"
+          src="https://www.googletagmanager.com/gtag/js?id=G-9ECB4X2BPT"
+          strategy="beforeInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){window.dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
+            gtag('config', 'G-9ECB4X2BPT');
           `}
         </Script>
+      </head>
+      <body>
         {children}
         <WhatsAppFloat />
         <ScrollAnimations />
