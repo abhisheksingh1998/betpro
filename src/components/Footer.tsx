@@ -12,7 +12,7 @@ export function Footer() {
             src="/logo-betpro.png"
             alt="Betpro"
             width={155}
-            height={42}
+            height={48}
           />
           <p>{footer.description}</p>
         </div>

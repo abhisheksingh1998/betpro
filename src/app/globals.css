@@ -175,19 +175,19 @@ img {
 .logo-link {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-shrink: 0;
   width: 155px;
-  height: 42px;
+  height: 48px;
   overflow: hidden;
 }
 
 .logo-link img {
   width: 155px;
-  height: 155px;
+  height: 48px;
   max-width: none;
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .nav-desktop {
@@ -1078,7 +1078,9 @@ a.match-board:hover {
 
 .site-footer img {
   width: 155px;
-  height: auto;
+  height: 48px;
+  object-fit: contain;
+  object-position: left center;
   margin-bottom: 1rem;
 }
 
