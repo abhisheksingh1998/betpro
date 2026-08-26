@@ -9,31 +9,46 @@ import { WhyUs } from "@/components/home/WhyUs";
 import { BetBig } from "@/components/home/BetBig";
 import { BlogPreview } from "@/components/home/BlogPreview";
 import { FAQ } from "@/components/home/FAQ";
-import { SITE_URL } from "@/data/site";
 
-const HOME_TITLE =
-  "Betpro – Live Sports Odds, Cricket ID & Casino | Powered by Rollwin";
+const HOME_TITLE = "Betpro – Live Sports Betting & Online Gaming";
 const HOME_DESCRIPTION =
-  "Get your Betpro ID for live cricket, football, tennis, and casino tables. Instant WhatsApp onboarding, clear odds, and Rollwin-backed settlements.";
+  "Explore Betpro for live sports markets, cricket, football and other online gaming options. Discover the platform and play responsibly.";
+const HOME_URL = "https://www.bpexch.games/";
 
 export const metadata: Metadata = {
-  title: HOME_TITLE,
+  title: {
+    absolute: HOME_TITLE,
+  },
   description: HOME_DESCRIPTION,
-  alternates: { canonical: SITE_URL },
+  alternates: {
+    canonical: HOME_URL,
+  },
   openGraph: {
     title: HOME_TITLE,
     description: HOME_DESCRIPTION,
-    url: SITE_URL,
+    url: HOME_URL,
   },
 };
 
-const organizationJsonLd = {
+const homeJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Betpro",
-  url: SITE_URL,
-  logo: `${SITE_URL}/logo-betpro.png`,
-  description: HOME_DESCRIPTION,
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.bpexch.games/#organization",
+      name: "Betpro",
+      url: "https://www.bpexch.games/",
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.bpexch.games/#website",
+      name: "Betpro",
+      url: "https://www.bpexch.games/",
+      publisher: {
+        "@id": "https://www.bpexch.games/#organization",
+      },
+    },
+  ],
 };
 
 export default function HomePage() {
@@ -41,7 +56,7 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
       />
       <Header variant="home" />
       <main>
