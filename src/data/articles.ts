@@ -98,6 +98,12 @@ export const articles: Article[] = [
       "Practical deposit and session rules Indian players can keep — without pretending willpower is infinite.",
     readTime: "4 min",
     image: "/images/blog-mindset.png",
+    seo: {
+      title: "Responsible Betting Limits That Actually Stick | Betpro",
+      description:
+        "Learn practical ways to set realistic betting limits, manage your activity and maintain responsible betting habits over time.",
+      headline: "Responsible Betting Limits That Actually Stick",
+    },
     sections: [
       {
         id: "rules",
