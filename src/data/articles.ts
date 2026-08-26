@@ -6,6 +6,11 @@ export type Article = {
   excerpt: string;
   readTime: string;
   image: string;
+  seo?: {
+    title: string;
+    description: string;
+    headline: string;
+  };
   sections: { id: string; heading: string; paragraphs: string[] }[];
 };
 
@@ -19,6 +24,12 @@ export const articles: Article[] = [
       "A calm framework for spotting when in-play cricket prices overreact — and when to stay out.",
     readTime: "6 min",
     image: "/images/blog-cricket.png",
+    seo: {
+      title: "How to Read Live Cricket Odds Without the Noise | Betpro",
+      description:
+        "Learn how to read live cricket odds, understand changing markets and focus on useful information while following a live cricket match.",
+      headline: "How to Read Live Cricket Odds Without the Noise",
+    },
     sections: [
       {
         id: "start",
