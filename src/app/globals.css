@@ -178,13 +178,13 @@ img {
   justify-content: flex-start;
   flex-shrink: 0;
   width: 155px;
-  height: 48px;
+  height: 42px;
   overflow: hidden;
 }
 
 .logo-link img {
   width: 155px;
-  height: 48px;
+  height: 42px;
   max-width: none;
   object-fit: contain;
   object-position: left center;
@@ -1078,7 +1078,7 @@ a.match-board:hover {
 
 .site-footer img {
   width: 155px;
-  height: 48px;
+  height: 42px;
   object-fit: contain;
   object-position: left center;
   margin-bottom: 1rem;
