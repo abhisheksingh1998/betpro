@@ -65,6 +65,12 @@ export const articles: Article[] = [
       "Five-minute prep that keeps midweek football bets disciplined when you cannot watch every lineup show.",
     readTime: "5 min",
     image: "/images/blog-football.png",
+    seo: {
+      title: "Football Pre-Match Checklist for Busy Nights | Betpro",
+      description:
+        "Use this practical football pre-match checklist to review key information before a match and make more informed betting decisions.",
+      headline: "Football Pre-Match Checklist for Busy Nights",
+    },
     sections: [
       {
         id: "timebox",
